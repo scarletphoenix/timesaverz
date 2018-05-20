@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cart Page</title>
+</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="validate2.js"></script>
+<body>
+<div class="jumbotron text-center" style="display: none;"  id="MyService">
+  <h1>Home Cleaning Service</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="panel panel-info" id="contactInfo">
+      <div class="panel-heading">Contact Information</div>
+		<div class="panel-body"  id="contactDetails">
+		<div class="form-element form-group">
+			<label>Address:</label>
+			<textarea class="form-control form-element" rows="4" id="address"></textarea>
+		</div>
+		<div class="form-element">
+			<label>Contact :</label><br>
+			<input type="contact" id="contact" class="form-element">
+		</div>
+		<button class="btn-block btn-primary form-element" onclick="addAddress()"  id="addAddress">Add Address</button>
+		<a href="#" hidden="hidden" id="newAddress">Add new Address</a>	
+	</div>
+    </div>
+	</div>
+    <div class="col-sm-6">
+    	<div class="row">
+		<div class="panel panel-info">
+	      <div class="panel-heading">My Cart</div>
+	      <div class="panel-body" id="myCartData">
+
+	      </div>
+	    </div>
+	        		<div>
+	    		<div class="panel panel-info">
+	      		<div class="panel-heading">Address Book:</div>
+	      		<div class="panel-body"  id="finalAddressDetails">
+	      		</div>
+	    	</div>
+	     
+  			</div>
+    	</div>
+	     
+  </div>
+</div>
+  <div class="row">
+    <div class="col-sm-6">
+	</div>
+
+</div>
+</div>
+
+</body>
+</html>

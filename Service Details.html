@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Service Details</title>
+</head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="validate.js"></script>
+<body>
+<div id="MyService"  style="display: none;">
+<div class="jumbotron text-center">
+  <h1>Home Cleaning Service</h1>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 well">
+    	 
+	      <div class="panel-info"  id="serviceDetails">
+		</div>
+    </div>
+    <div class="col-sm-6">
+	    <div class="panel panel-primary">
+	      <div class="panel-heading">Home Cleaning</div>
+	      <div class="panel-body">
+	      	<label>Select the type of home: </label>
+	      	<div>
+	      		<select id="serviceType" class="form-element custom-select"
+	      		onchange="changePayment()"></select>   
+	      	</div>
+	      	<label>Desired frequency: </label>
+	      	<div>
+	      		<select id="frequency" class="form-element custom-select"
+	      		onchange="changeFactor()"></select>   
+	      	</div>
+	      	<div style="display: none;">
+	      		<input type="number" id="multFactor">
+	      		<input type="number" id="paymentAmount">
+	      	</div>
+	      	<div>
+	      		<p>Date: 
+	      			<input type="date" id="datepicker" onchange="changeFactor()">
+	      		</p>
+	      		<p>
+	      			<span>Time :</span>
+	      			<select id="timeSlot" class="form-element custom-select" onchange="changeFactor()">
+	      				<option>10AM-11AM</option>
+	      				<option>11AM-12PM</option>
+	      			</select>   
+	      		</p>
+	      	</div>
+	      	<div class="form-element">
+	      		<label>Service Total : </label>  
+	      		<input type="number" name="totalAmount" id="totalAmount" disabled="disabled">
+	      	</div>
+	      	<button class="btn-block btn-primary form-element" onclick="location.href = 'Cart Page.html';"  id="submit">Book Service</button>
+	      </div>
+	    </div>
+	     
+  </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
