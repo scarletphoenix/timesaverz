@@ -27,6 +27,7 @@ $(document).ready(function () {
              changePayment();
              changeFactor();
              submit();
+             $('.carousel').carousel()
 
         }
     });
